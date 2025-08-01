@@ -1,0 +1,21 @@
+# Recurring jobs configuration for SolidQueue
+# This file configures recurring jobs that should be executed on a schedule
+# Documentation: https://github.com/rails/solid_queue#recurring-tasks
+
+# production:
+#   clear_finished_jobs:
+#     class: SolidQueue::ClearFinishedJobsJob
+#     cron: '0 4 * * *'  # Run at 4 AM every day
+#     args: [7.days.ago]
+
+development:
+  clear_solid_queue_finished_jobs:
+    class: SolidQueue::ClearFinishedJobsJob
+    cron: '0 4 * * *'  # Run at 4 AM every day
+    args: [7.days.ago]
+
+production:
+  clear_solid_queue_finished_jobs:
+    class: SolidQueue::ClearFinishedJobsJob
+    cron: '0 4 * * *'  # Run at 4 AM every day
+    args: [30.days.ago]
