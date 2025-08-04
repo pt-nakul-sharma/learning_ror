@@ -2,8 +2,6 @@ name: CI
 
 on:
   pull_request:
-  push:
-    branches: [main]
 
 jobs:
   scan_ruby:
@@ -53,7 +51,7 @@ jobs:
       - name: reviewdog-rubocop
         uses: reviewdog/action-rubocop@v2
         with:
-          github_token: ${{secrets.github_token}}
+          github_token: ${{ secrets.github_token }}
           rubocop_version: gemfile
           rubocop_extensions: rubocop-rails-omakase:gemfile
           reporter: github-pr-review # Options: github-pr-check, github-check, github-pr-review
