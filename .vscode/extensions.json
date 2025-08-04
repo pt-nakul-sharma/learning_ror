@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    // Ruby language support
+    "rebornix.ruby",
+    "castwide.solargraph",
+    
+    // RuboCop integration
+    "misogi.ruby-rubocop",
+    
+    // Rails specific extensions
+    "hridoy.rails-snippets",
+    "aki77.rails-db-schema",
+    
+    // General development extensions
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    
+    // Git integration
+    "eamodio.gitlens",
+    
+    // Docker support (for your Docker setup)
+    "ms-vscode-remote.remote-containers",
+    
+    // GitHub integration (for PR reviews with ReviewDog)
+    "github.vscode-pull-request-github"
+  ]
+}
