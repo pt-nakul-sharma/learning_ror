@@ -50,8 +50,15 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
-      - name: Lint code for consistent style
-        run: bin/rubocop -f github
+      - name: reviewdog-rubocop
+        uses: reviewdog/action-rubocop@v2
+        with:
+          github_token: ${{ secrets.github_token }}
+          rubocop_version: gemfile
+          rubocop_extensions: rubocop-rails-omakase:gemfile
+          reporter: github-pr-review # Options: github-pr-check, github-check, github-pr-review
+          fail_on_error: true
+          reviewdog_flags: -diff="git diff FETCH_HEAD"
 
   test:
     runs-on: ubuntu-latest

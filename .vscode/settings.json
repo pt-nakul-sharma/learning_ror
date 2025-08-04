@@ -1,0 +1,62 @@
+{
+  // Ruby and RuboCop settings
+  "ruby.rubocop.onSave": true,
+  "ruby.rubocop.useBundler": true,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
+    }
+  },
+  
+  // Auto-fix on save for Ruby files
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.rubocop": "explicit"
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true
+  },
+  
+  // General editor settings to prevent common linting issues
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  
+  // YAML settings (for your config files)
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true
+  },
+  
+  // JavaScript/TypeScript settings
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  
+  // ERB settings
+  "[erb]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true
+  },
+  
+  // Auto-save settings
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 1000,
+  
+  // Extension recommendations
+  "extensions.autoUpdate": true
+}
