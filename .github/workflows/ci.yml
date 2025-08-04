@@ -57,7 +57,7 @@ jobs:
           rubocop_version: gemfile
           rubocop_extensions: rubocop-rails-omakase:gemfile
           reporter: github-pr-review # Options: github-pr-check, github-check, github-pr-review
-          fail_on_error: true
+          fail_level: error # Options: info, warning, error
           reviewdog_flags: -diff="git diff FETCH_HEAD"
 
   test:
