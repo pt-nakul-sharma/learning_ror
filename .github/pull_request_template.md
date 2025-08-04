@@ -8,7 +8,6 @@
 
 - [x] Completed task
 - [ ] Task 2
-- [ ] Task 3
 
 ## How to Test
 
